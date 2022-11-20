@@ -14,8 +14,13 @@ public class CalculaMateriais {
     
     //Calculo materiais de uma parede de alvenaria conforme a área digitada pelo usuário:
     public void materiaisParedeAlvenaria() {
+        System.out.println("==========CALCULO DOS MATERIAIS PARA PAREDE DE ALVENARIA==========");
         ArrayList<Double> quantidadeMateriais = new ArrayList<Double>();
-        double areaParede = calculadora.recebeNumero();
+        System.out.println("Digite o comprimento da parede:");
+        double comprimento = calculadora.recebeNumero();
+        System.out.println("Digite a altura da parede:");
+        double altura = calculadora.recebeNumero();
+        double areaParede = calculadora.multiplicacao(comprimento, altura);
         for (int i = 0; i<materiais.length; i++) {
             double quantidade = calculadora.multiplicacao(areaParede, coeficientes[i]);
             
