@@ -5,7 +5,7 @@ public class Calculadora {
     //Pedir os dados diretamente em cada função
     Scanner leia = new Scanner(System.in);
 
-    public double recebeNumeros() {
+    public double recebeNumero() {
         double numeroDouble;
         while (true) {
             System.out.println("Digite um número:");
