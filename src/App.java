@@ -1,5 +1,8 @@
 public class App {
     public static void main(String[] args) throws Exception {
-        System.out.println("Hello, World!");
+        //teste classe CalculaMateriais
+        CalculaMateriais alvenaria = new CalculaMateriais();
+
+        alvenaria.materiaisParedeAlvenaria();
     }
 }
