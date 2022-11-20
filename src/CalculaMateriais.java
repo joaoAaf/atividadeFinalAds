@@ -12,7 +12,7 @@ public class CalculaMateriais {
     private String[] unidades = {"UN","SACO 50KG","M³","SACO 20KG"};
 
     
-    //Calculo materiais de uma parede de alvenaria conforme a área digitada pelo usuário:
+    //Calculo materiais de uma parede de alvenaria conforme a dimenções digitadas pelo usuário:
     public void materiaisParedeAlvenaria() {
         System.out.println("==========CALCULO DOS MATERIAIS PARA PAREDE DE ALVENARIA==========");
         ArrayList<Double> quantidadeMateriais = new ArrayList<Double>();
