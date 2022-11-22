@@ -28,7 +28,7 @@ public class CalculoJanelas {
 			System.out.println("O ambiente em questão é um banheiro ou depósito?");
 			System.out.println("1 - Sim;");
 			System.out.println("2 - Não;");
-			opcao = leia.nextLine();
+			opcao = leia.next();
 			if (opcao.equals("1")) {
 				areaJanelaBruta = calculadora.divisao(areaAmbiente, 8);
 				quantJanelas = calculadora.teto(calculadora.divisao(areaJanelaBruta, areaJanela));
@@ -42,7 +42,7 @@ public class CalculoJanelas {
 			else {
 				System.out.println("Opção Inválida!");
 			}
-		} while (true);
+		} while (!opcao.equals("1") || !opcao.equals("2"));
 		
 		return quantJanelas;
 	}
