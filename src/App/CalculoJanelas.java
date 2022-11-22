@@ -1,10 +1,13 @@
 package App;
 
+import java.util.Scanner;
+
 public class CalculoJanelas {
 	
+	Scanner leia = new Scanner(System.in);
 	Calculadora calculadora = new Calculadora();
 	
-	public double calculoJanelas() {
+	public double quantJanelas() {
 		System.out.println("==========CALCULO QUANTIDADE DE JANELAS==========");
 		System.out.println("Digite as dimensões da(s) janela(s) que deseja instalar:");
 		System.out.println("Comprimento:");
@@ -20,24 +23,27 @@ public class CalculoJanelas {
 		double areaAmbiente = calculadora.multiplicacao(comprimentoAmbiente, larguraAmbiente);
 		double areaJanelaBruta;
 		double quantJanelas = 0;
-		double opcao = 0;
-		while (opcao!=1 || opcao!=2) {
+		String opcao = "";
+		do {
 			System.out.println("O ambiente em questão é um banheiro ou depósito?");
 			System.out.println("1 - Sim;");
 			System.out.println("2 - Não;");
-			opcao = calculadora.recebeNumero();
-			if (opcao==1) {
+			opcao = leia.nextLine();
+			if (opcao.equals("1")) {
 				areaJanelaBruta = calculadora.divisao(areaAmbiente, 8);
 				quantJanelas = calculadora.teto(calculadora.divisao(areaJanelaBruta, areaJanela));
+				break;
 			}
-			else if (opcao==2) {
+			else if (opcao.equals("2")) {
 				areaJanelaBruta = calculadora.divisao(areaAmbiente, 6);
 				quantJanelas = calculadora.teto(calculadora.divisao(areaJanelaBruta, areaJanela));
+				break;
 			}
 			else {
 				System.out.println("Opção Inválida!");
 			}
-		}
+		} while (true);
+		
 		return quantJanelas;
 	}
 	
