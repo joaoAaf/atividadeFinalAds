@@ -1,9 +1,0 @@
-/**
- * 
- */
-/**
- * @author joao
- *
- */
-module atividadeFinalAds {
-}
