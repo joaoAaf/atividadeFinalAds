@@ -23,8 +23,8 @@ public class Calculadora {
     }
 
 //Operações calculadora
-    public double soma() {
-        return 0;
+    public double soma(double numeroA, double numeroB ) {
+        return numeroA + numeroB;
     }
     public double subtracao() {
         return 0;
