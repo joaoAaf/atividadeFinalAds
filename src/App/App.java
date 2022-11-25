@@ -10,9 +10,18 @@ public class App {
     	
     	//teste classe CalculaJanelas
         
+    	/*
         CalculoJanelas janelas = new CalculoJanelas();
     	
-    	System.out.println(janelas.quantJanelas());
+    	System.out.println(janelas.quantJanelas());*/
+    	
+    	/*
+    	AreaQuadrado area = new AreaQuadrado();
+    	System.out.println(area.calculaArea());*/
+    	
+    	//media de dois numeros;
+    	Media media = new Media();
+    	System.out.println(media.calculaMedia());
     	
     }
 }

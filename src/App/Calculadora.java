@@ -23,11 +23,11 @@ public class Calculadora {
     }
 
 //Operações calculadora
-    public double soma() {
-        return 0;
+    public double soma(double numeroA, double numeroB ) {
+        return numeroA + numeroB;
     }
-    public double subtracao() {
-        return 0;
+    public double subtracao(double numeroA, double numeroB ) {
+        return numeroA - numeroB;
     }
     public double divisao(double numeroA, double numeroB) {
         while (numeroB==0) {
@@ -42,8 +42,8 @@ public class Calculadora {
         double resultado = numeroA*numeroB;
         return resultado;
     }
-    public double exponencial() {
-        return 0;
+    public double exponencial(double numeroA, double numeroB) {
+        return Math.pow(numeroA, numeroB);
     }
     public double raizQuadrada() {
         return 0;
