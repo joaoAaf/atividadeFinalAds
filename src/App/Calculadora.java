@@ -45,11 +45,11 @@ public class Calculadora {
     public double exponencial(double numeroA, double numeroB) {
         return Math.pow(numeroA, numeroB);
     }
-    public double raizQuadrada() {
-        return 0;
+    public double raizQuadrada(double numeroA) {
+        return Math.sqrt(numeroA);
     }
-    public double piso() {
-        return 0;
+    public double piso(double numeroA) {
+        return Math.floor(numeroA);
     }
     public double teto(double numero) {
         double resultado = Math.ceil(numero);

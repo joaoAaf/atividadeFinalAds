@@ -18,10 +18,22 @@ public class App {
     	/*
     	AreaQuadrado area = new AreaQuadrado();
     	System.out.println(area.calculaArea());*/
-    	
+    
     	//media de dois numeros;
-    	Media media = new Media();
-    	System.out.println(media.calculaMedia());
+    	//Media media = new Media();
+    	//System.out.println(media.calculaMedia());
+    	
+       //Teste classe CalculaIMC
+      
+       /*CalculaIMC imc = new CalculaIMC();
+    	imc.calculaIMC(); */
+    	
+    	 //Teste classe CalculaSalario
+    	
+    	 /*CalculaSalario salarioFinal = new CalculaSalario();
+    	 salarioFinal.calculaSalarioFinal();  */
+    	
+    
     	
     }
 }
