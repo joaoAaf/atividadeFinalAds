@@ -26,12 +26,12 @@ public class CalculaMateriais {
             double quantidade = calculadora.multiplicacao(areaParede, coeficientes[i]);
             
             if (i==2) {
-                double teste = Math.floor(quantidade);
+                double teste = calculadora.piso(quantidade);
                 if ((quantidade-teste)>0.5) {
                     quantidade=calculadora.teto(quantidade);
                 }
                 else {
-                    quantidade = teste + 0.5;
+                    quantidade = calculadora.soma(teste,0.5);
                 }
             }
             else {
